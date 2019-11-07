@@ -18,6 +18,7 @@ from . import lint
 from . import parser
 from . import kotlin
 from . import markdown
+from . import rust
 from . import swift
 from . import util
 
@@ -30,6 +31,7 @@ from . import util
 OUTPUTTERS = {
     "kotlin": {"output_func": kotlin.output_kotlin, "clear_output_dir": True},
     "markdown": {"output_func": markdown.output_markdown, "clear_output_dir": False},
+    "rust": {"output_func": rust.output_rust, "clear_output_dir": False},
     "swift": {"output_func": swift.output_swift, "clear_output_dir": True},
 }
 
